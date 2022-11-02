@@ -40,10 +40,10 @@
                   Nuestros servicios
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
-                  <li><a class="dropdown-item" href="#">Despedidas</a></li>
+                  <li><a class="dropdown-item" href="./page/nuestrosServicios.html">Cumpleaños</a></li>
+                  <li><a class="dropdown-item" href="./page/nuestrosServicios.html">Despedidas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Fiestas</a></li>
+                  <li><a class="dropdown-item" href="./page/nuestrosServicios.html">Fiestas</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -67,27 +67,31 @@
     <form method="get">
     
     <article class="littleMargin">
-      <div>
+      <div class="littlePadTop">
           <label for="nombre y apellido"> Nombre y Apellido</label>
           <input type="text" name="nombre y apellido" id="nombre y apellido" placeholder="Tu nombre y tu apellido" required>
       </div>
-      <div>
+      <div class="littlePadTop">
           <label for="fechaDeReserva"> Fecha de reserva</label>
           <input type="date" name="fechanac" id="fechanac" placeholder="Fecha de reserva estimativa" required>
       </div>
-      <div>
-          <label for="consulta">Motivo de consulta</label>
-          <input type="textarea" name="consulta" id="consulta" size=auto placeholder="Consulta" required>
-      </div>
-      <div>
+
+      <!-- BOOTSTRAP FORM -->
+      <div class="form-floating littlePadTop">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Motivo de consulta</label>
+        </div>
+      <!-- ------ -->
+      
+      <div class="littlePadTop">
           <label for="correoElectronico">Correo Electrónico</label>
           <input type="email" name="correo" id="correo" placeholder="Tu correo electrónico" required>
       </div>
-      <div>
+      <div class="littlePadTop">
           <label for="telefono">Teléfono</label>
           <input type="number" name="telefono" id="telefono" placeholder="Tu teléfono sin 0 y sin 15" required>
       </div>
-      <div>
+      <div class="littlePadTop">
           <input type="submit" value="Enviar">
           <input type="reset" value="Resetear">
       </div>
